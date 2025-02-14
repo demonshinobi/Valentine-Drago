@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valentine Drago</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="background"></div>
+  
+  <!-- Initial Screen -->
+  <div id="content">
+    <h1>Will you be my Valentine?</h1>
+    <button id="start-btn">Play Game</button>
+  </div>
+
+  <!-- Tutorial Overlay -->
+  <div id="tutorial" class="hidden">
+    <div class="tutorial-content">
+      <h2>How to Play</h2>
+      <div class="control-item">
+        <span class="key-group">
+          <span class="key">↑</span>
+          <span class="key">↓</span>
+          <span class="key">←</span>
+          <span class="key">→</span>
+        </span>
+        <span class="instruction">Move Toothless</span>
+      </div>
+      <div class="control-item">
+        <span class="key">SPACE</span>
+        <span class="instruction">Shoot Fire</span>
+      </div>
+      <p class="tip">Catch power-ups for auto-fire!</p>
+      <button id="tutorial-btn">Got it!</button>
+    </div>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game" class="hidden">
+    <div id="score-banner">
+      <div class="score-content">
+        <div class="score-row">
+          <div class="lives">
+            <span>Lives:</span>
+            <div id="lives-display"></div>
+          </div>
+          <p>Score: <span id="numeric-score">0</span></p>
+          <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        <p>Valentine Progress:</p>
+        <div id="hearts-score"></div>
+      </div>
+    </div>
+    <div id="message-container">
+      <p id="round-message" class="message-text"></p>
+    </div>
+    <div id="game-area">
+      <div id="player" class="dragon-character">
+        <img src="icon images/toothless.jpg" alt="Toothless">
+      </div>
+      <div id="projectiles"></div>
+      <div id="hearts-container"></div>
+      <div id="power-ups"></div>
+    </div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="game-over" class="hidden">
+    <div class="result-content">
+      <h2>Even though you lost...</h2>
+      <p>You haven't lost me! 12 years...worth it for you ❤️</p>
+      <button id="continue-btn">Continue</button>
+    </div>
+  </div>
+
+  <!-- Final Gift Screen -->
+  <div id="gift" class="hidden">
+    <div class="gift-content">
+      <h2>My Love...</h2>
+      <p>Through all these years, I still think you're a lil baddie.</p>
+      <p>Will you be my valentine? and Will you go on a date with me?</p>
+      <h1>I really love you ❤️</h1>
+      <p class="ps-message">P.S. I'd whoop you at this game just saying 😏</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

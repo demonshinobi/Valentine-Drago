@@ -1,0 +1,33 @@
+{
+  "name": "valentine-drago",
+  "version": "1.0.0",
+  "description": "A Valentine's Day game with dragons",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Josh",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.1.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.josh.valentinedrago",
+    "productName": "Valentine Drago",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icon images/dragon heart.jpg"
+    },
+    "files": [
+      "**/*",
+      "!dist/*",
+      "!build/*",
+      "!node_modules/*"
+    ]
+  }
+}
